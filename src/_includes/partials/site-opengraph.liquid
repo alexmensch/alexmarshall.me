@@ -1,0 +1,7 @@
+{% if summary %}
+    <meta property="og:description" content="{{ summary }}" />
+{% endif %}
+    <meta property="og:type" content="website" />
+    <meta name="title" property="og:title" content="{{ pageTitle }}" />
+    <meta property="og:url" content="https://{{ site.domain }}{{ page.url }}" />
+    <meta name="locale" property="og:locale" content="en_GB" />

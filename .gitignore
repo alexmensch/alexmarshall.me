@@ -1,0 +1,16 @@
+node_modules/
+_site/
+.cache
+.DS_Store
+.wrangler
+.env
+.claude/*
+
+# Generated files
+_cloudflare/*/worker.js
+_cloudflare/*/wrangler.toml
+.assetsignore
+
+# Claude skills
+!.claude/skills/
+!.claude/skills/**

@@ -1,0 +1,23 @@
+@use "../config/design-tokens" as dt;
+@use "../config/fonts";
+
+.contact-options {
+  outline-color: #{dt.get-color("secondary")};
+  max-width: #{dt.get-value("measure", "compact")};
+  height: 100%;
+
+  &__link {
+    background: #{dt.get-color("secondary")};
+    padding-block: #{dt.get-size("2xs")};
+
+    @include fonts.sans;
+    @include dt.use("weight", "bold");
+
+    text-decoration: none;
+    text-align: center;
+
+    &:hover {
+      background: #{dt.get-color("secondary-glare")};
+    }
+  }
+}

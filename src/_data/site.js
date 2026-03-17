@@ -1,0 +1,105 @@
+const site = {
+  domain: "alexmarshall.me",
+  authorName: "Alex Marshall",
+  authorEmail: "hello@alxm.me",
+  siteName: "Alex Marshall",
+  podcastEmail: "podcast@alexmarshall.me",
+  podcastURL: {
+    remotes: [
+      {
+        name: "Apple",
+        url: "https://podcasts.apple.com/us/podcast/what-i-knew/id1846839520"
+      },
+      {
+        name: "Spotify",
+        url: "https://open.spotify.com/show/54h0C6BuIMJnYiXcsnt67H"
+      },
+      {
+        name: "Overcast",
+        url: "https://overcast.fm/itunes1846839520"
+      },
+      {
+        name: "YouTube",
+        url: "https://www.youtube.com/playlist?list=PL5BiFkWofLTWIxHPdfu2MRhHMubCxi-N_"
+      },
+      {
+        name: "Amazon",
+        url: "https://music.amazon.co.uk/podcasts/973c75f5-1dc0-4e8a-92ad-1bb7579a4b28"
+      }
+    ]
+  },
+  links: [],
+  nav: [
+    { title: "Writing", url: "/writing/" },
+    { title: "Podcast", url: "/podcast/" },
+    { title: "Contact", url: "/contact/", footer: true }
+  ]
+};
+
+site.links = [
+  {
+    rel: "icon",
+    href: "/favicon.svg",
+    type: "image/svg+xml"
+  },
+  {
+    rel: "icon",
+    href: "/favicon.ico",
+    sizes: "32x32"
+  },
+  {
+    rel: "apple-touch-icon",
+    href: "/apple-touch-icon.png"
+  },
+  {
+    rel: "manifest",
+    href: "/site.webmanifest"
+  },
+  {
+    rel: "preconnect",
+    href: "https://rsms.me"
+  },
+  {
+    rel: "preconnect",
+    href: "https://fonts.googleapis.com"
+  },
+  {
+    rel: "preconnect",
+    href: "https://fonts.gstatic.com",
+    crossorigin: ""
+  },
+  {
+    rel: "stylesheet",
+    href: "/assets/css/root.css"
+  },
+  {
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap",
+    lazy: true
+  },
+  {
+    rel: "stylesheet",
+    href: "https://rsms.me/inter/inter.css",
+    lazy: true
+  }
+];
+
+site.newsletter = {
+  apiUrl: "https://newsletter.alxm.me",
+  channelId: "alexmarshall.me"
+};
+
+site.company = {
+  name: "Thoughtful Design Ltd",
+  number: "15642102",
+  vat: "GB465435281",
+  address: {
+    street: "82A James Carter Road",
+    locality: "Mildenhall",
+    region: "England",
+    postalCode: "IP28 7DE",
+    country: "GB"
+  }
+};
+
+export default site;
