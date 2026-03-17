@@ -108,7 +108,6 @@ The writing listing page (`src/_includes/partials/article.liquid`) also filters 
 ### Custom Filters
 
 - `getLinkActiveState` - Navigation active state
-- `loremIpsum` - Generate placeholder text
 - `markdownify` - Render Markdown inline
 - `dateToRfc3339`, `getNewestCollectionItemDate` - Date formatting
 

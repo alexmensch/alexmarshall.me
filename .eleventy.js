@@ -154,9 +154,6 @@ export default async function (eleventyConfig) {
   // Custom filter to determine if current page is within parent link path
   eleventyConfig.addFilter("getLinkActiveState", helpers.getLinkActiveState);
 
-  // Generate lorem ipsum for use in content
-  eleventyConfig.addFilter("loremIpsum", helpers.loremIpsum);
-
   // Process input as Markdown, useful for Markdown included in frontmatter
   eleventyConfig.addFilter("markdownify", (markdownString) =>
     markdownLib.renderInline(markdownString)

@@ -1,18 +1,6 @@
 import slugify from "slugify";
 import { DateTime } from "luxon";
-import { LoremIpsum } from "lorem-ipsum";
 import MarkdownIt from "markdown-it";
-
-const lorem = new LoremIpsum({
-  sentencesPerParagraph: {
-    max: 8,
-    min: 4
-  },
-  wordsPerSentence: {
-    max: 16,
-    min: 4
-  }
-});
 
 const markdown = new MarkdownIt({
   html: true, // Enable HTML tags in source
@@ -66,29 +54,6 @@ const helpers = {
     }
 
     return response;
-  },
-  getPageTheme(pagePath, siteNav) {
-    for (const item of siteNav) {
-      if (pagePath.includes(item.url)) {
-        return item.theme ?? null;
-      }
-    }
-    return null;
-  },
-  loremIpsum(count, type) {
-    switch (type) {
-      case "words":
-      case "word":
-        return lorem.generateWords(count);
-      case "sentences":
-      case "sentence":
-        return lorem.generateSentences(count);
-      case "paragraphs":
-      case "paragraph":
-        return lorem.generateParagraphs(count);
-      default:
-        return `Invalid input. Parameters were: ${count} and ${type}`;
-    }
   },
   getNewestCollectionItemDate(collection) {
     if (!collection || collection.length === 0) {

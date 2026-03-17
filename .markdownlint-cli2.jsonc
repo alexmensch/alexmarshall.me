@@ -5,5 +5,5 @@
     "MD041": false,
     "MD034": false
   },
-  "ignores": ["src/styles.md"]
+  "ignores": []
 }

@@ -2,7 +2,7 @@
 layout: layouts/contact
 title: Contact
 meta:
-  description: "Get in touch with Alex Marshall to discuss counselling, artwork, the podcast, or any other enquiries."
+  description: "Get in touch with Alex Marshall to discuss counselling or any other enquiries."
 hero:
   header: Get in touch with me
 options:
@@ -17,4 +17,4 @@ options:
     cta_url: https://www.linkedin.com/in/awmars
 ---
 
-Whether you're interested in learning more about [counselling](/counselling), are interested in purchasing my [artwork](/artwork), want to discuss my [podcast](/podcast), or have any other questions, please don't hesitate to get in touch.
+Whether you're interested in learning more about counselling, want to discuss the [podcast](/podcast), or have any other questions, please don't hesitate to get in touch.

@@ -37,7 +37,6 @@
     "dotenv": "^17.3.1",
     "eleventy-plugin-cloudflare-kv": "^1.0.6",
     "eleventy-plugin-purgecss": "^0.6.0",
-    "lorem-ipsum": "^2.0.8",
     "luxon": "^3.7.2",
     "markdown-it": "^14.1.1",
     "markdown-it-footnote": "^4.0.0",
